@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="dao.ProductDAOTest" time="0.879" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="dao.ProductDAOTest" time="0.46" errors="0" skipped="0">
   <properties>
-    <property name="idea.version" value="2017.1.5"/>
+    <property name="idea.version" value="2017.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.51-b03"/>
+    <property name="user.country.format" value="PT"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="/Users/diogohenrique/Documents/JavaProjects/mproducts"/>
@@ -13,7 +14,7 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.country" value="IE"/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
@@ -33,10 +34,9 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.12.5"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="os.version" value="10.13.5"/>
     <property name="user.home" value="/Users/diogohenrique"/>
-    <property name="user.timezone" value="Europe/Dublin"/>
+    <property name="user.timezone" value="Europe/Lisbon"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.1.5 clean install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.2.5 clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -59,12 +59,10 @@
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="dao.ProductDAOTest" name="testUpdate" time="0.013"/>
-  <testcase classname="dao.ProductDAOTest" name="testGet" time="0.697"/>
-  <testcase classname="dao.ProductDAOTest" name="testGetAll" time="0.169"/>
+  <testcase classname="dao.ProductDAOTest" name="testGetAll" time="0.449"/>
+  <testcase classname="dao.ProductDAOTest" name="testUpdate" time="0"/>
   <testcase classname="dao.ProductDAOTest" name="testAdd" time="0"/>
+  <testcase classname="dao.ProductDAOTest" name="testGet" time="0.011"/>
 </testsuite>

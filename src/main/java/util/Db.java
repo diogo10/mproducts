@@ -6,15 +6,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.List;
-import java.util.Properties;
-import java.util.UUID;
+import java.util.*;
 
 public abstract class Db<T> {
 
     private static final String USERNAME = "root";
-    //private static final String PASSWORD = "123";
-    private static final String PASSWORD = "nidokingdiogo";
+    private static final String PASSWORD = "123456";
+    //private static final String PASSWORD = "nidokingdiogo";
     private static final String DBNAME = "mproducts";
     //private static final String WHERE = "localhost";
     private static final String WHERE = "merinom1.cpq2ivbbr0qn.eu-west-1.rds.amazonaws.com";
@@ -31,11 +29,12 @@ public abstract class Db<T> {
         properties.setProperty("user", USERNAME);
         properties.setProperty("password", PASSWORD);
         properties.setProperty("useSSL", "false");
+        properties.setProperty("serverTimezone", Calendar.getInstance().getTimeZone().getID());
 
         //localhost
-        //conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + DBNAME,properties);
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + DBNAME,properties);
         //RDS
-        conn = DriverManager.getConnection("jdbc:mysql://" + WHERE + ":3306/" + DBNAME,properties);
+        //conn = DriverManager.getConnection("jdbc:mysql://" + WHERE + ":3306/" + DBNAME,properties);
 
         return conn;
     }

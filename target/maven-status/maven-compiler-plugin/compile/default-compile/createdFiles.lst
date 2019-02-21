@@ -1,5 +1,5 @@
-dao/ProductDAO.class
 util/Db.class
-model/Product.class
+dao/ProductDAO.class
 util/MyWS.class
+model/Product.class
 ws/ProductREST.class
