@@ -15,7 +15,7 @@ public abstract class Db<T> {
     //private static final String PASSWORD = "nidokingdiogo";
     private static final String DBNAME = "mproducts";
     //private static final String WHERE = "localhost";
-    private static final String WHERE = "merinom1.cpq2ivbbr0qn.eu-west-1.rds.amazonaws.com";
+    private static final String WHERE = "XXX";
 
     private Connection conn = null;
     private PreparedStatement stmt = null;
